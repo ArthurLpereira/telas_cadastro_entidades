@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Changa:wght@200..800&family=Doto:wght@100..900&family=Jacquarda+Bastarda+9&family=Odibee+Sans&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&family=Silkscreen:wght@400;700&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&family=Wallpoet&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f5f9;
+    font-family: "Poppins", serif;
+}
+section{
+    display: flex;
+    width: 40vw;
+    height: 50vh;
+}
+.esquerda{
+    background-color: #776FE3;
+    width: 40%;
+    color: #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    border-radius:5px 0px 0px 5px;
+}
+.direita{
+    background-color: #BBC5E3;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:0px 5px 5px 0px;
+}
+.direita form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+.direita form div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 10px;
+}
+.direita form div:nth-child(2) input {
+    margin-left:25px ;
+}
+.direita form input{
+    width: 80%;
+    height: 25px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+.direita form button {
+    width: 50%;
+    height: 35px;
+    border: none;
+    border-radius: 25px;
+    background-color: #6F8CE3;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin-left: 50px;
+}
+.direita form button:hover {
+    background-color: #5d80e7;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.esquerda.categorias{
+    width: 50%;
+}
