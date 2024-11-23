@@ -7,8 +7,16 @@
     <title>Cadastrar Usuário</title>
 </head>
 <body>
+    <header>
+        <div class="escolher-cadastro">
+            <button class="cadastro ativo" data-escolhido="Usuario">Usuário</button>
+            <button class="cadastro" data-escolhido="Categoria">Categoria</button>
+            <button class="cadastro" data-escolhido="Turma">Turma</button>
+            <button class="cadastro" data-escolhido="Contagem">Contagem</button>
+        </div>
+    </header>
     <main>
-        <section>
+        <section class="sessao-cadastro ativo" id="Usuario">
             <div class="esquerda">
                 <h1>Cadastrar Usuários</h1>
             </div>
@@ -20,19 +28,75 @@
                     </div>
                     <div>
                         <label for="txtRM">RM:</label>
-                        <input type="number" id="txtRM" name="txtnome">
+                        <input type="number" id="txtRM" name="txtRM" class="ir-direita">
                     </div>
                     <div>
                         <label for="txtSenha">Senha:</label>
-                        <input type="password" id="txtSenha" name="txtnome">
+                        <input type="password" id="txtSenha" name="txtSenha">
                     </div>
                     <button type="submit">Cadastrar</button>
                 </form>
             </div>
         </section>
-        <div class="link">
-            <a href="./Categorias.html">Cadastrar Categorias</a>
-        </div>
+        <section class="sessao-cadastro" id="Categoria">
+            <div class="esquerda categorias">
+                <form action="" method="post">
+                    <div>
+                        <label for="txtnomeCate">Nome:</label>
+                        <input type="text" id="txtnomeCate" name="txtnomeCate">
+                    </div>
+                    <div>
+                        <label for="checAtivoCat">Ativo:</label>
+                        <input type="checkbox" id="checAtivoCat" name="checAtivoCat">
+                    </div>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+            <div class="direita categorias">
+                <h1>Cadastrar Categorias</h1>
+            </div>
+        </section>
+        <section class="sessao-cadastro" id="Turma">
+            <div class="esquerda turma">
+                <h1>Cadastrar Turmas</h1>
+            </div>
+            <div class="direita turma">
+                <form action="" method="post">
+                    <div>
+                        <label for="txtnomeTurma">Nome:</label>
+                        <input type="text" id="txtnomeTurma" name="txtnomeTurma">
+                    </div>
+                    <div>
+                        <label for="txtanoTurma">Ano:</label>
+                        <input type="number" id="txtanoTurma" name="txtanoTurma" class="ir-direita">
+                    </div>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </section>
+        <section class="sessao-cadastro" id="Contagem">
+            <div class="esquerda contagem">
+                <form action="" method="post">
+                    <div>
+                        <label for="dataContagem">Data:</label>
+                        <input type="date" id="dataContagem" name="dataContagem">
+                    </div>
+                    <div>
+                        <label for="horaContagem">Hora:</label>
+                        <input type="time" id="horaContagem" name="horaContagem">
+                    </div>
+                    <div>
+                        <label for="qtdContagem">Quantidade:</label>
+                        <input type="number" id="qtdContagem" name="qtdContagem">
+                    </div>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+            <div class="direita contagem">
+                <h1>Cadastrar Contagem</h1>
+            </div>
+        </section>
     </main>
+    <script src="./js/script.js"></script>
 </body>
 </html>
